@@ -1,5 +1,5 @@
 # Patterns
 Patterns that divided into three parts:
-* creational
+* creational(factory method)
 * structural
 * behavioral
