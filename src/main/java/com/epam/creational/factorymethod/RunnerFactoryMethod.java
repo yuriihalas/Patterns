@@ -15,7 +15,12 @@ public class RunnerFactoryMethod {
 
         PenFactory penFactoryBallPoint = new BallPointFactory();
         pen = penFactoryBallPoint.createPen();
+        pen.open();
+        pen.write("I'm fine..");
+
+        PenFactory penFactoryBallPointSec = new BallPointFactory();
+        pen = penFactoryBallPointSec.createPen();
         //will throw exception because pen isn't open after closing
-        pen.write("Hi all");
+        //pen.write("Hi all");
     }
 }

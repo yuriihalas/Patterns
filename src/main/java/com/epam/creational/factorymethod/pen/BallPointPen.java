@@ -4,7 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class BallPointPen extends Pen {
-    private static Logger LOG = LogManager.getLogger(BallPointPen.class);
+    private static final Logger LOG = LogManager.getLogger(BallPointPen.class);
 
     public void write(String message) {
         super.write(message);
