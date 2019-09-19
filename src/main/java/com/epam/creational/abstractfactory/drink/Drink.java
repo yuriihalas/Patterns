@@ -1,4 +1,4 @@
-package com.epam.creational.abstractfactory.drinks;
+package com.epam.creational.abstractfactory.drink;
 
 public interface Drink {
     void drink();

@@ -1,21 +1,25 @@
-package com.epam.creational.abstractfactory.drinks.concrete;
+package com.epam.creational.abstractfactory.drink.concrete;
 
-import com.epam.creational.abstractfactory.drinks.Drink;
-import com.epam.creational.abstractfactory.drinks.NameDrink;
+import com.epam.creational.abstractfactory.drink.Drink;
+import com.epam.creational.abstractfactory.drink.NameDrink;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Water implements Drink {
-    private static final Logger LOG = LogManager.getLogger(Water.class);
-    private static final double DRINK_PER_SIP = 10.;
+import java.math.BigDecimal;
+
+public class CocaCola implements Drink {
+    private static final Logger LOG = LogManager.getLogger(Juice.class);
+    private static final double DRINK_PER_SIP = 11.;
 
     private String name;
+    private BigDecimal price;
     private Double capacityRemaining;
     private Double totalCapacity;
 
-    public Water() {
-        this.name = NameDrink.WATER.toString();
-        this.totalCapacity = 100.;
+    public CocaCola() {
+        this.name = NameDrink.COCA_COLA.toString();
+        this.price = new BigDecimal("31.99");
+        this.totalCapacity = 120.;
         this.capacityRemaining = this.totalCapacity;
     }
 
@@ -37,8 +41,9 @@ public class Water implements Drink {
 
     @Override
     public String toString() {
-        return "Water{" +
+        return "CocaCola{" +
             "name='" + name + '\'' +
+            ", price=" + price +
             ", capacityRemaining=" + capacityRemaining +
             ", totalCapacity=" + totalCapacity +
             '}';

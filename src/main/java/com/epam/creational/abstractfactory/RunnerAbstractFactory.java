@@ -1,7 +1,7 @@
 package com.epam.creational.abstractfactory;
 
-import com.epam.creational.abstractfactory.drinks.Drink;
-import com.epam.creational.abstractfactory.drinks.NameDrink;
+import com.epam.creational.abstractfactory.drink.Drink;
+import com.epam.creational.abstractfactory.drink.NameDrink;
 import com.epam.creational.abstractfactory.factory.PizzaFactory;
 import com.epam.creational.abstractfactory.factory.concrete.DniproPizzaFactory;
 import com.epam.creational.abstractfactory.factory.concrete.KyivPizzaFactory;

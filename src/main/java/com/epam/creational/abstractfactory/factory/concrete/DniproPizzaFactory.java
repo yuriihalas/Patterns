@@ -1,11 +1,11 @@
 package com.epam.creational.abstractfactory.factory.concrete;
 
 import com.epam.creational.abstractfactory.config.DniproPizzaInfo;
-import com.epam.creational.abstractfactory.drinks.Drink;
-import com.epam.creational.abstractfactory.drinks.NameDrink;
-import com.epam.creational.abstractfactory.drinks.concrete.CocaCola;
-import com.epam.creational.abstractfactory.drinks.concrete.Juice;
-import com.epam.creational.abstractfactory.drinks.concrete.Water;
+import com.epam.creational.abstractfactory.drink.Drink;
+import com.epam.creational.abstractfactory.drink.NameDrink;
+import com.epam.creational.abstractfactory.drink.concrete.CocaCola;
+import com.epam.creational.abstractfactory.drink.concrete.Juice;
+import com.epam.creational.abstractfactory.drink.concrete.Water;
 import com.epam.creational.abstractfactory.factory.PizzaFactory;
 import com.epam.creational.abstractfactory.pizza.Pizza;
 import org.apache.logging.log4j.LogManager;

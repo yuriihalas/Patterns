@@ -1,4 +1,4 @@
-package com.epam.creational.abstractfactory.drinks;
+package com.epam.creational.abstractfactory.drink;
 
 public enum NameDrink {
     COCA_COLA("Coca-cola"),
