@@ -9,7 +9,7 @@ public class VeggiePizza extends Pizza {
     private static final Logger LOG = LogManager.getLogger();
 
     public VeggiePizza() {
-        setName(NamePizza.VEGGIE_PIZZA.toString());
+        this.name = NamePizza.VEGGIE_PIZZA.toString();
     }
 
     @Override

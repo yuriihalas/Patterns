@@ -3,8 +3,8 @@ package com.epam.creational.abstractfactory.pizza;
 import java.math.BigDecimal;
 
 public abstract class Pizza {
-    private String name;
-    private BigDecimal price;
+    protected String name;
+    protected BigDecimal price;
 
     protected Pizza() {
         price = new BigDecimal("0.0");

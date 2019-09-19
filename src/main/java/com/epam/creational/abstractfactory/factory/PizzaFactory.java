@@ -1,5 +1,7 @@
 package com.epam.creational.abstractfactory.factory;
 
+import com.epam.creational.abstractfactory.drinks.Drink;
+import com.epam.creational.abstractfactory.drinks.NameDrink;
 import com.epam.creational.abstractfactory.pizza.NamePizza;
 import com.epam.creational.abstractfactory.pizza.Pizza;
 import com.epam.creational.abstractfactory.pizza.concrete.CheesePizza;
@@ -28,6 +30,8 @@ public abstract class PizzaFactory {
         setPricePizza(pizza);
         return pizza;
     }
+
+    public abstract Drink createDrink(NameDrink drink);
 
     private Pizza preparePizza(NamePizza namePizza) {
         LOG.debug(String.format("Preparing %s..", namePizza));

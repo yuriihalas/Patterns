@@ -9,7 +9,7 @@ public class PepperoniPizza extends Pizza {
     private static final Logger LOG = LogManager.getLogger(PepperoniPizza.class);
 
     public PepperoniPizza() {
-        setName(NamePizza.PEPPERONI_PIZZA.toString());
+        this.name = NamePizza.PEPPERONI_PIZZA.toString();
     }
 
     @Override

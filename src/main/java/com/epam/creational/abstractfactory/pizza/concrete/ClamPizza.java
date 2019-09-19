@@ -9,7 +9,7 @@ public class ClamPizza extends Pizza {
     private static final Logger LOG = LogManager.getLogger();
 
     public ClamPizza() {
-        setName(NamePizza.CLAM_PIZZA.toString());
+        this.name = NamePizza.CLAM_PIZZA.toString();
     }
 
     @Override

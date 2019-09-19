@@ -9,7 +9,7 @@ public class CheesePizza extends Pizza {
     private static final Logger LOG = LogManager.getLogger(ClamPizza.class);
 
     public CheesePizza() {
-        setName(NamePizza.CHEESE_PIZZA.toString());
+        this.name = NamePizza.CHEESE_PIZZA.toString();
     }
 
     @Override

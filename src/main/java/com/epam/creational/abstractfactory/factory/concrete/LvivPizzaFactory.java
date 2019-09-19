@@ -1,6 +1,10 @@
 package com.epam.creational.abstractfactory.factory.concrete;
 
 import com.epam.creational.abstractfactory.config.LvivPizzaInfo;
+import com.epam.creational.abstractfactory.drinks.Drink;
+import com.epam.creational.abstractfactory.drinks.NameDrink;
+import com.epam.creational.abstractfactory.drinks.concrete.CocaCola;
+import com.epam.creational.abstractfactory.drinks.concrete.Juice;
 import com.epam.creational.abstractfactory.factory.PizzaFactory;
 import com.epam.creational.abstractfactory.pizza.Pizza;
 import org.apache.logging.log4j.LogManager;
@@ -12,6 +16,18 @@ import java.util.stream.Collectors;
 
 public class LvivPizzaFactory extends PizzaFactory {
     private static final Logger LOG = LogManager.getLogger(LvivPizzaFactory.class);
+
+    @Override
+    public Drink createDrink(NameDrink drink) {
+        LOG.info(String.format("Creating drink(%s)..", drink));
+        switch (drink) {
+            case JUICE:
+                return new Juice();
+            case COCA_COLA:
+                return new CocaCola();
+        }
+        throw new RuntimeException("Sorry, but at current moment we can't create " + drink);
+    }
 
     @Override
     protected Pizza bakePizza(Pizza pizza) {
