@@ -1,7 +1,4 @@
-package com.epam.structural.proxy;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+package com.epam.structural.proxy.company;
 
 import java.math.BigDecimal;
 import java.util.HashMap;

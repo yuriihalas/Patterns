@@ -1,4 +1,4 @@
-package com.epam.structural.proxy;
+package com.epam.structural.proxy.company;
 
 public class Employee {
     private String name;

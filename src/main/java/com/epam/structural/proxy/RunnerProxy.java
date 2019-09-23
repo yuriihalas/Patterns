@@ -1,5 +1,9 @@
 package com.epam.structural.proxy;
 
+import com.epam.structural.proxy.company.Company;
+import com.epam.structural.proxy.company.Employee;
+import com.epam.structural.proxy.company.EpamCompany;
+import com.epam.structural.proxy.company.SecurityCompanyProxy;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
