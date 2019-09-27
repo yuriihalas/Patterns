@@ -22,8 +22,8 @@ public class StrategyManager {
     public void runStrategy(String strategy) {
         Strategy strategyToRun = strategies.get(strategy);
         if (Objects.isNull(strategyToRun)) {
-            LOG.warn(String.format("Our service don't have \"%s\" strategy, sorry..", strategy));
-            LOG.warn(String.format("Current strategies: %s", strategies.keySet()));
+            LOG.error(String.format("Our service don't have \"%s\" strategy, sorry..", strategy));
+            LOG.error(String.format("Current strategies: %s", strategies.keySet()));
             return;
         }
         LOG.info(String.format("Execute strategy: \"%s\" from class: \"%s\"", strategy, strategyToRun.getClass().getSimpleName()));
