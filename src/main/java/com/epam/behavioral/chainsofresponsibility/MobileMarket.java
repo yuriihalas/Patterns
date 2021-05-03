@@ -7,6 +7,7 @@ import com.epam.behavioral.chainsofresponsibility.chain.DeveloperAccessProcess;
 import com.epam.behavioral.chainsofresponsibility.model.User;
 
 public class MobileMarket {
+    
     private Chain chain;
 
     public MobileMarket() {
