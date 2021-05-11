@@ -6,4 +6,5 @@ Patterns that divided into three parts:
 
 For run some pattern, please find class Runner{NameOfPattern}
 
+
 Example: RunnerAbstractFactory.
